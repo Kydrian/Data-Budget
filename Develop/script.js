@@ -7,11 +7,11 @@ const collectEmployees = function () {
   
 let employees = []
 
-const again = true
+let again = true
 while (again) {
   const firstName = window.prompt("what is your employees first name?");
   const lastName = window.prompt("what is your employees last name");
-  const salary = parseFloat(window.prompt("what is your employess salary"));
+  let salary = parseFloat(window.prompt("what is your employess salary"));
   if(isNaN (salary)){
     salary=0
   }
